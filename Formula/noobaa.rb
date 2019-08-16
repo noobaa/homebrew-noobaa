@@ -6,7 +6,14 @@ class Noobaa < Formula
       :revision => "e97aff3759afc0d08f20f42484ac475570e9cd4d"
   head "https://github.com/noobaa/noobaa-operator.git"
 
-  depends_on "go"
+  bottle do
+    root_url "https://github.com/noobaa/homebrew-noobaa/releases/download/v1.0.2"
+    rebuild 1
+    cellar :any_skip_relocation
+    sha256 "f3957cea96857e8c045d03bd34ac14b2b8be7b1e0cacee71bcc4cb57a8ad6331" => :mojave
+  end
+  
+  depends_on "go" => [:build, :test]
 
   def install
     ENV["GOPATH"] = buildpath
