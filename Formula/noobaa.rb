@@ -2,14 +2,14 @@ class Noobaa < Formula
   desc "CLI for managing NooBaa S3 service on Kubernetes/Openshift"
   homepage "https://github.com/noobaa/noobaa-operator"
   url "https://github.com/noobaa/noobaa-operator.git",
-      :tag      => "v1.1.1",
-      :revision => "9d7746b0d73baf39618de5fdc3465619cc2ebebe"
+      :tag      => "v2.0.0",
+      :revision => "ce4e8dacb8d61260c44630d27a2094e0c3419c74"
   head "https://github.com/noobaa/noobaa-operator.git"
 
   bottle do
-    root_url "https://github.com/noobaa/homebrew-noobaa/releases/download/v1.1.1_2"
+    root_url "https://github.com/noobaa/homebrew-noobaa/releases/download/v2.0.0"
     cellar :any_skip_relocation
-    sha256 "e948e81a6d52c03b1fddde7e82d2cede89d702d8b3953a19b5335d4d352607bc" => :mojave
+    sha256 "19608b0a973ac3a037c4da52992a28506b7f42311e7b00efa1fbf072c566c06d" => :mojave
   end
   
   depends_on "go" => [:build, :test]
@@ -17,6 +17,7 @@ class Noobaa < Formula
   def install
     ENV["GOPATH"] = buildpath
     ENV["GO111MODULE"] = "on"
+    ENV["GOPROXY"] = "https://proxy.golang.org"
 
     src = buildpath/"src/github.com/noobaa/noobaa-operator"
     src.install buildpath.children
@@ -32,7 +33,7 @@ class Noobaa < Formula
 
   test do
     output = `#{bin}/noobaa version 2>&1`
-    pos = output.index "CLI version: 1.1.1"
+    pos = output.index "CLI version: 2.0.0"
     raise "Version check failed" if pos.nil?
 
     puts "Success"
