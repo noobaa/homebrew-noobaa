@@ -3,7 +3,7 @@ all: bottle
 .PHONY: all
 
 bottle:
-	brew uninstall noobaa
+	brew uninstall noobaa || true
 	brew install --build-bottle noobaa
 	brew bottle noobaa
 	brew postinstall noobaa
