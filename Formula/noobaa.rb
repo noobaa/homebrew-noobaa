@@ -2,14 +2,14 @@ class Noobaa < Formula
   desc "CLI for managing NooBaa S3 service on Kubernetes/Openshift"
   homepage "https://github.com/noobaa/noobaa-operator"
   url "https://github.com/noobaa/noobaa-operator.git",
-      :tag      => "v2.0.5",
-      :revision => "4409106f6300248e64e200442f9a7c51453f9618"
+      :tag      => "v2.0.6",
+      :revision => "6725061f60b31707fe326617d08ea1f04f3fce84"
   head "https://github.com/noobaa/noobaa-operator.git"
 
   bottle do
-    root_url "https://github.com/noobaa/homebrew-noobaa/releases/download/v2.0.5"
+    root_url "https://github.com/noobaa/homebrew-noobaa/releases/download/v2.0.6"
     cellar :any_skip_relocation
-    sha256 "00d1c291f4b8c6db1cfb25f8db2e6cd315ff012b4ea21ed9a4cfea90ac59dd36" => :catalina
+    sha256 "a39c651766eae84e0ad64d3b380f240789bba3c292f7da821b1350ce95147ba4" => :catalina
   end
   
   depends_on "go" => [:build, :test]
@@ -31,7 +31,7 @@ class Noobaa < Formula
 
   test do
     output = `#{bin}/noobaa version 2>&1`
-    pos = output.index "CLI version: 2.0.5"
+    pos = output.index "CLI version: 2.0.6"
     raise "Version check failed" if pos.nil?
 
     puts "Success"
