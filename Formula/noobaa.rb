@@ -10,6 +10,7 @@ class Noobaa < Formula
     root_url "https://github.com/noobaa/homebrew-noobaa/releases/download/v2.0.10"
     cellar :any_skip_relocation
     sha256 "7f45a053d30d97acb74072eb43f47f7bc30a90d80e1758bf3e002a9959c35212" => :mojave
+    sha256 "c81f1d21a895c4c06aa47cc560c306084d2c73ae040ec073ecc8dab39ec38c15" => :catalina
   end
   
   depends_on "go" => [:build, :test]
