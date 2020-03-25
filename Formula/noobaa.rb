@@ -2,15 +2,15 @@ class Noobaa < Formula
   desc "CLI for managing NooBaa S3 service on Kubernetes/Openshift"
   homepage "https://github.com/noobaa/noobaa-operator"
   url "https://github.com/noobaa/noobaa-operator.git",
-      :tag      => "v2.0.10",
-      :revision => "e905e55a3df55cf8fee9d7b3f124a7ca93aace42"
+      :tag      => "v2.1.0",
+      :revision => "2783fb066d9eecc87c0e5fc29a4e0b879dd46be1"
   head "https://github.com/noobaa/noobaa-operator.git"
 
   bottle do
-    root_url "https://github.com/noobaa/homebrew-noobaa/releases/download/v2.0.10"
+    root_url "https://github.com/noobaa/homebrew-noobaa/releases/download/v2.1.0"
     cellar :any_skip_relocation
-    sha256 "7f45a053d30d97acb74072eb43f47f7bc30a90d80e1758bf3e002a9959c35212" => :mojave
-    sha256 "c81f1d21a895c4c06aa47cc560c306084d2c73ae040ec073ecc8dab39ec38c15" => :catalina
+    sha256 "38037e667f15f5e9b31a0869bc2736e22bc1e2604ac8f5bf50229f78af52b3eb" => :mojave
+    # sha256 "c81f1d21a895c4c06aa47cc560c306084d2c73ae040ec073ecc8dab39ec38c15" => :catalina
   end
   
   depends_on "go" => [:build, :test]
@@ -32,7 +32,7 @@ class Noobaa < Formula
 
   test do
     output = `#{bin}/noobaa version 2>&1`
-    pos = output.index "CLI version: 2.0.10"
+    pos = output.index "CLI version: 2.1.0"
     raise "Version check failed" if pos.nil?
 
     puts "Success"
