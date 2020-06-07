@@ -3,13 +3,13 @@ class Noobaa < Formula
   homepage "https://github.com/noobaa/noobaa-operator"
   url "https://github.com/noobaa/noobaa-operator.git",
       :tag      => "v2.2.0",
-      :revision => "3c9e4c46961c0eb173d2abca77890eccb8b0f1f8"
+      :revision => "c00a7d18f2ad8dddd1b8daf842093a54cb3456cd"
   head "https://github.com/noobaa/noobaa-operator.git"
 
   bottle do
     root_url "https://github.com/noobaa/homebrew-noobaa/releases/download/v2.2.0"
     cellar :any_skip_relocation
-    sha256 "34e1c08a9cf5e7dbe76a33f32e753a83407f815fce4afe360ff28ccc5d81ef2d" => :mojave
+    sha256 "88505225cfd36257f98840037d3f96d073fab7838c90349a0663e9846aad3ffc" => :mojave
   end
   
   depends_on "go" => [:build, :test]
