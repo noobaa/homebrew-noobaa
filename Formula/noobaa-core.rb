@@ -1,7 +1,7 @@
 require "language/node"
 
-class NooBaaCore < Formula
-  desc "NooBaa-core is a standalone program that packages multiple core commands"
+class NoobaaCore < Formula
+  desc "noobaa-core is a standalone program that packages multiple core commands"
   homepage "https://github.com/noobaa/noobaa-core"
   url "https://github.com/noobaa/noobaa-core.git",
       :tag      => "v5.6.0",
