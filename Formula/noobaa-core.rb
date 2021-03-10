@@ -4,8 +4,7 @@ class NoobaaCore < Formula
   desc "noobaa-core is a standalone program that packages multiple core commands"
   homepage "https://github.com/noobaa/noobaa-core"
   url "https://github.com/noobaa/noobaa-core.git",
-      :tag      => "v5.6.0",
-      :revision => "8b9ad5ebe346afe4f46ba4d72526c435cefab7ac"
+    :branch => "master"
   head "https://github.com/noobaa/noobaa-core.git"
 
   depends_on "node@14"
