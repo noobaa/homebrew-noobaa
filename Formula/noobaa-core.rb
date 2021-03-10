@@ -5,7 +5,7 @@ class NoobaaCore < Formula
   homepage "https://github.com/noobaa/noobaa-core"
   url "https://github.com/noobaa/noobaa-core.git",
     :branch => "master"
-  version "5.7-master"
+  version "master"
   head "https://github.com/noobaa/noobaa-core.git"
 
   depends_on "node@14"
