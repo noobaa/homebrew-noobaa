@@ -13,8 +13,8 @@ class NoobaaCore < Formula
 
   def install
     system "npm", "install", *Language::Node.local_npm_install_args
-    #system "npm", "run", "build:native"
-    system "npm", "run", "build:core"
+    #system "npm", "run", "build:native", *Language::Node.local_npm_install_args
+    system "npm", "run", "build:core", *Language::Node.local_npm_install_args
     bin.install "build/noobaa-core-macos" => "noobaa-core"
   end
 
