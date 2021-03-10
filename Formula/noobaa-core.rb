@@ -8,7 +8,7 @@ class NoobaaCore < Formula
       :revision => "8b9ad5ebe346afe4f46ba4d72526c435cefab7ac"
   head "https://github.com/noobaa/noobaa-core.git"
 
-  depends_on "node"
+  depends_on "node@14"
   depends_on "python" => :build
 
   def install
