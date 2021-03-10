@@ -12,9 +12,9 @@ class NoobaaCore < Formula
   depends_on "python" => :build
 
   def install
-    system "npm", "install", *Language::Node.std_npm_install_args(libexec)
-    system "npm", "run", "build:native", *Language::Node.std_npm_install_args(libexec)
-    system "npm", "run", "build:core", *Language::Node.std_npm_install_args(libexec)
+    system "npm", "install"
+    system "npm", "run", "build:native"
+    system "npm", "run", "build:core"
     bin.install "build/noobaa-core-macos" => "noobaa-core"
   end
 
