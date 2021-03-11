@@ -10,10 +10,11 @@ class NoobaaCore < Formula
 
   depends_on "node@14"
   depends_on "python" => :build
+  depends_on "yasm"
 
   def install
     system "npm", "install", *Language::Node.local_npm_install_args
-    #system "npm", "run", "build:native"
+    system "npm", "run", "build:native"
     #system "npm", "run", "build:core"
     system "npx", "--yes", "pkg", ".", "--public", "--target", "host", "--output", "noobaa-core"
     bin.install "noobaa-core"
