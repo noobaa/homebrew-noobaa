@@ -1,21 +1,27 @@
 # NooBaa's Homebrew Tap
-This tap installs the NooBaa CLI for managing NooBaa S3 service on Kubernetes/Openshift. 
+This brew tap provides tools for NooBaa users/developers:
+- `noobaa` is the noobaa-operator CLI for managing NooBaa S3 service on Kubernetes/Openshift. 
+- `noobaa-core` is the noobaa-core probram that includes multiple core commands.
 
 ## Usage
-Tap and Install:
-```
-brew install noobaa/noobaa/noobaa
-```
-(same as: brew tap noobaa/noobaa && brew install noobaa)
 
-Upgrade:
+#### Tap and Install:
+```
+brew tap noobaa/noobaa
+brew install noobaa
+brew install noobaa-core
+```
+
+#### Upgrade:
 ```
 brew upgrade noobaa
+brew upgrade noobaa-core
 ```
 
-Uninstall and Untap:
+#### Uninstall and Untap:
 ```
 brew uninstall noobaa
+brew uninstall noobaa-core
 brew untap noobaa/noobaa
 ```
 
