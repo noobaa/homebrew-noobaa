@@ -9,7 +9,7 @@ class Noobaa < Formula
   bottle do
     root_url "https://github.com/noobaa/homebrew-noobaa/releases/download/v5.6.0"
     cellar :any_skip_relocation
-    sha256 "c43b27a197685d6bba31bf734be5f3647c1d8eda260bd56b00fb587d1a0e586c" => :mojave
+    sha256 "124ffdb1b4c9b2506da1b19b72850a3d720f03256e8352c5183620fa27d35089" => :mojave
   end
   
   depends_on "go" => [:build, :test]
