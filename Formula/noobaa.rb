@@ -7,7 +7,7 @@ class Noobaa < Formula
   head "https://github.com/noobaa/noobaa-operator.git"
 
   bottle do
-    root_url "https://homebrew.bintray.com/bottles-noobaa"
+    root_url "https://github.com/noobaa/homebrew-noobaa/releases/download/v5.6.0"
     cellar :any_skip_relocation
     sha256 "c43b27a197685d6bba31bf734be5f3647c1d8eda260bd56b00fb587d1a0e586c" => :mojave
   end
