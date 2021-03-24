@@ -15,6 +15,7 @@ class Noobaa < Formula
   depends_on "go" => [:build, :test]
 
   def install
+    ENV.deparallelize # avoid parallel make jobs
     ENV["GOPATH"] = buildpath
     ENV["GO111MODULE"] = "on"
     ENV["GOPROXY"] = "https://proxy.golang.org"
