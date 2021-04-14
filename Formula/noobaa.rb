@@ -2,12 +2,12 @@ class Noobaa < Formula
   desc "CLI for managing NooBaa S3 service on Kubernetes/Openshift"
   homepage "https://github.com/noobaa/noobaa-operator"
   url "https://github.com/noobaa/noobaa-operator.git",
-      :tag      => "v5.6.0",
-      :revision => "706b32adeeb5c59c5657b363ea1274401261ed95"
+      :tag      => "v5.7.0",
+      :revision => "054bc35207d5c3cae70838052b76b55149c1c260"
   head "https://github.com/noobaa/noobaa-operator.git"
 
   bottle do
-    root_url "https://github.com/noobaa/noobaa-operator/releases/download/v5.6.0"
+    root_url "https://github.com/noobaa/noobaa-operator/releases/download/v5.7.0"
     sha256 cellar: :any_skip_relocation, mojave: "124ffdb1b4c9b2506da1b19b72850a3d720f03256e8352c5183620fa27d35089"
   end
   
