@@ -7,7 +7,7 @@ class Noobaa < Formula
   head "https://github.com/noobaa/noobaa-operator.git"
 
   bottle do
-    root_url "https://github.com/noobaa/homebrew-noobaa/releases/download/v5.6.0"
+    root_url "https://github.com/noobaa/noobaa-operator/releases/download/v5.6.0"
     sha256 cellar: :any_skip_relocation, mojave: "124ffdb1b4c9b2506da1b19b72850a3d720f03256e8352c5183620fa27d35089"
   end
   
