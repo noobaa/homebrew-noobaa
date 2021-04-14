@@ -1,4 +1,7 @@
 # NooBaa's Homebrew Tap
+
+NooBaa is an object data service for hybrid and multi cloud environments.
+
 This brew tap provides tools for NooBaa users/developers:
 - `noobaa` is the noobaa-operator CLI for managing NooBaa S3 service on Kubernetes/Openshift - see [noobaa-operator](https://github.com/noobaa/noobaa-operator)
 - `noobaa-core` is the noobaa-core program that includes multiple core commands - see [Standalone-noobaa-core](https://github.com/noobaa/noobaa-core/wiki/Standalone-noobaa-core)
@@ -24,12 +27,6 @@ brew uninstall noobaa
 brew uninstall noobaa-core
 brew untap noobaa/noobaa
 ```
-
-## Info
-
-- **About**: NooBaa is an object data service for hybrid and multi cloud environments
-- **Repository**: https://github.com/noobaa/noobaa-core
-- **Operator + CLI**: https://github.com/noobaa/noobaa-operator
 
 ---
 
