@@ -31,12 +31,13 @@ brew untap noobaa/noobaa
 - **Repository**: https://github.com/noobaa/noobaa-core
 - **Operator + CLI**: https://github.com/noobaa/noobaa-operator
 
+---
 
 ## For Maintainers
 
 Follow the following instructions on a new release.
 
-#### Update the formula url
+### Update the formula url
 
 Edit the formula and set the new release tag and revision in the url section.
 
@@ -48,7 +49,7 @@ See [example](https://github.com/noobaa/homebrew-noobaa/blob/5ec5108b18a6e8ea1bb
       :revision => "054bc35207d5c3cae70838052b76b55149c1c260"
 ```
 
-#### Build bottle locally
+### Build bottle locally
 
 ```bash
 $ brew uninstall noobaa
@@ -64,13 +65,20 @@ $ brew bottle noobaa
   end
 ```
 
-#### Upload the bottle
+### Note on MacOS versions
+
+Notice that in the examples I renamed the macos version of the bottle file to `mojave` although I built it on `big_sur` (both the file name and in the sha256 line). 
+
+Not sure if this is really needed or not, but the intention was to make this bottle apply for the oldest macos version we can support since the binary itself is portable anyhow.
+
+
+### Upload the bottle
 
 Edit the release and upload the bottle tar file to the release assets.
 
 See example release - https://github.com/noobaa/noobaa-operator/releases/tag/v5.7.0
 
-#### Update the formula bottle
+### Update the formula bottle
 
 Edit the formula `bottle do` section to the new release download url and the sha256 as provided from brew bottle before.
 
@@ -84,7 +92,7 @@ See [example](https://github.com/noobaa/homebrew-noobaa/blob/193e23780131ab3db2d
   end
 ```
 
-#### Test the bottle
+### Test the bottle
 
 ```bash
 $ brew reinstall noobaa
