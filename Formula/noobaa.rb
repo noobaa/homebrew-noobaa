@@ -3,7 +3,7 @@ class Noobaa < Formula
   homepage "https://github.com/noobaa/noobaa-operator"
   url "https://github.com/noobaa/noobaa-operator.git",
       :tag      => "v5.9.0",
-      :revision => "651fbb855d14f0f340bb67be0ca26de216f285dd"
+      :revision => "f8650b328ffbc82fb02e6fd2291f8cca4b3aef4c"
   head "https://github.com/noobaa/noobaa-operator.git"
 
   bottle do
