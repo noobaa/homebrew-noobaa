@@ -8,7 +8,7 @@ class Noobaa < Formula
 
   bottle do
     root_url "https://github.com/noobaa/noobaa-operator/releases/download/v5.9.0"
-    sha256 cellar: :any_skip_relocation, monterey: "14d0fe99c65ab98ac996c68cede3354f92b27d4d4a58cf7be389cdb630d34846"
+    sha256 cellar: :any_skip_relocation, monterey: "b163cf7bdf172dee76c891251c7b35e6dbe3277e200fda3b3b84c2a68e270031"
   end
   depends_on "go" => [:build, :test]
 
