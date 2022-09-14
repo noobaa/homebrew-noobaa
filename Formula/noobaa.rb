@@ -3,7 +3,7 @@ class Noobaa < Formula
   homepage "https://github.com/noobaa/noobaa-operator"
   url "https://github.com/noobaa/noobaa-operator.git",
       :tag      => "v5.11.0",
-      :revision => "3e55ae59d4e44677f6694efe757ff6e3d70a7dfd"
+      :revision => "ec7030e0556cdf7dffb8217348245217c0620502"
   head "https://github.com/noobaa/noobaa-operator.git"
 
   depends_on "go" => [:build, :test]
