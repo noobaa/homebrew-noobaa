@@ -14,10 +14,9 @@ class NoobaaCore < Formula
 
   def install
     system "npm", "install", *Language::Node.local_npm_install_args
-    system "npm", "run", "build:native"
-    #system "npm", "run", "build:core"
-    system "npx", "--yes", "pkg", ".", "--public", "--target", "host", "--output", "noobaa-core"
-    bin.install "noobaa-core"
+    system "npm", "run", "build"
+    system "npm", "run", "pkg"
+    bin.install "build/noobaa-core"
   end
 
   test do
