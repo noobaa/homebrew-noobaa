@@ -8,7 +8,7 @@ class NoobaaCore < Formula
   version "master"
   head "https://github.com/noobaa/noobaa-core.git"
 
-  depends_on "node@16"
+  depends_on "node@18"
   depends_on "python" => :build
   depends_on "yasm"
 
