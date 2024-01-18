@@ -2,8 +2,8 @@ class Noobaa < Formula
   desc "CLI for managing NooBaa S3 service on Kubernetes/Openshift"
   homepage "https://github.com/noobaa/noobaa-operator"
   url "https://github.com/noobaa/noobaa-operator.git",
-      :tag      => "v5.12.4",
-      :revision => "ce3a87162b1ec45f0a64f4ac3c5d4f95dfe82178"
+      :tag      => "v5.14.2",
+      :revision => "e02239cd3d5c7b4b2fc0d5b5b1e76efb363ef5a6"
   head "https://github.com/noobaa/noobaa-operator.git"
 
   depends_on "go" => [:build, :test]
